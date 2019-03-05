@@ -1,0 +1,1 @@
+{"version":3,"file":"product-form.component.js","sourceRoot":"","sources":["product-form.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAC1C,qCAAoC;AAOpC;IALA;QAMG,UAAK,GAAG,IAAI,iBAAO,CAAC,CAAC,EAAC,UAAU,CAAC,CAAC;IACrC,CAAC;IAFY,oBAAoB;QALhC,gBAAS,CAAE;YACT,QAAQ,EAAE,cAAc;YACxB,WAAW,EAAE,+BAA+B;SAC9C,CAAC;OAEW,oBAAoB,CAEhC;IAAD,2BAAC;CAAA,AAFD,IAEC;AAFY,oDAAoB"}

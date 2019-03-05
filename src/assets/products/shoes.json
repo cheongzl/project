@@ -1,0 +1,16 @@
+[
+    {
+      "id": 1,
+      "name": "Shoe1",
+      "price": 19.95,
+      "image": "assets/1.jpg"
+    },
+
+    
+  {
+    "id": 2,
+    "name": "Shoe2",
+    "price": 19.95,
+    "image": "assets/2.jpg"
+  }
+]

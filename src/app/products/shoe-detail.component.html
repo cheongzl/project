@@ -1,0 +1,39 @@
+<div class='card'
+     *ngIf='shoe'>
+
+
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-8'>
+        <div class='row'>
+          <div class='col-md-4'>Name:</div>
+          <div class='col-md-8'>{{shoe.name}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>ID:</div>
+          <div class='col-md-8'>{{shoe.id}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Price:</div>
+          <div class='col-md-8'>{{shoe.price|currency:'USD':'symbol'}}</div>
+        </div>
+        
+
+      <div class='col-md-4'>
+        <img class='center-block img-responsive'
+             [style.width.px]='400'
+             [style.margin.px]='2'
+             [src]='shoe.image'
+             [title]='shoe.name'>
+      </div>
+    </div>
+  </div>
+
+  <div class='card-footer'>
+    <button class='btn btn-outline-secondary'
+            (click)='onBack()'
+            style='width:80px'>
+      <i class='fa fa-chevron-left'></i> Back
+    </button>
+  </div>
+</div>

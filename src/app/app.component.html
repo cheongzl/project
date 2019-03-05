@@ -1,0 +1,32 @@
+<nav>
+     <img src="/assets/logo28.png " routerLink="home" style="width:90px;height:90px;" >
+  <a style="float:right">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" style=width:400px>
+      <button mdbBtn size="sm" color="elegant" rounded="true" class="my-0 waves-light" mdbWavesEffect type="submit">Search</button>
+    <img src="/assets/lock.png" alt="login" style="width:40px;height:40px;" routerLink="login">
+</a>
+</nav>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+   
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.js"></script>
+
+                 <li class="nav-item active">
+                     <a routerLink="home">Home</a>  </li>
+                 <li class="nav-item active">
+                     <a routerLink="employee">Employee </a> </li>
+                 <li class="nav-item active">
+                     <a routerLink="product">Product Form </a> </li>
+                 <li class="nav-item active">
+                     <a routerLink="productdetails">Products </a> </li>
+                     <ngbd-dropdown-basic></ngbd-dropdown-basic>
+                     <hr/>
+                     
+  </div>
+</nav>
+
+              <alert></alert>
+              <router-outlet></router-outlet>

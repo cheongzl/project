@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col">
+      <div ngbDropdown class="d-inline-block">
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Categories</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button class="dropdown-item" [routerLink]="['/productdetails']">Fashion</button>
+          <button class="dropdown-item">Mobile, IT, Camera</button>
+          <button class="dropdown-item">Grocery</button>
+          <button class="dropdown-item"  [routerLink]="['/products']"  >Tools</button>
+        </div>
+      </div>
+    </div>

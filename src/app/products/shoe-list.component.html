@@ -1,0 +1,13 @@
+<h1>Products List</h1>
+
+<ul>
+	<li *ngFor="let shoe of shoes">
+        <a [routerLink]="['/shoe/', shoe.id]">{{shoe.name}}
+        <img 
+        [src]='shoe.image'
+        [style.width.px]='400'
+        [style.height.px]='200'
+        [style.margin.px]='2'></a>
+	</li>
+</ul>
+<a routerLink="/home">Go To Home</a>

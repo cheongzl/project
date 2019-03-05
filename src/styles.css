@@ -1,0 +1,361 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+button.calendar, button.calendar:active {
+  width: 2.75rem;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAcCAYAAAAEN20fAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEUSURBVEiJ7ZQxToVAEIY/YCHGxN6XGOIpnpaEsBSeQC9ArZbm9TZ6ADyBNzAhQGGl8Riv4BLAWAgmkpBYkH1b8FWT2WK/zJ8ZJ4qiI6XUI3ANnGKWBnht2/ZBDRK3hgVGNsCd7/ui+JkEIrKtqurLpEWaphd933+IyI3LEIdpCYCiKD6HcuOa/nwOa0ScJEnk0BJg0UTUWJRl6RxCYEzEmomsIlPU3IPW+grIAbquy+q6fluy/28RIBeRMwDXdXMgXLj/B2uimRXpui4D9sBeRLKl+1N+L+t6RwbWrZliTTTr1oxYtzVWiTQAcRxvTX+eJMnlUDaO1vpZRO5NS0x48sIwfPc87xg4B04MCzQi8hIEwe4bl1DnFMCN2zsAAAAASUVORK5CYII=') !important;
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: center;
+}
+
+/* Sortable table demo */
+
+th[sortable] {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  
+}
+
+th[sortable].desc:before, th[sortable].asc:before {
+  content: '';
+  display: block;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAmxJREFUeAHtmksrRVEUx72fH8CIGQNJkpGUUmakDEiZSJRIZsRQmCkTJRmZmJgQE0kpX0D5DJKJgff7v+ru2u3O3vvc67TOvsdatdrnnP1Y///v7HvvubdbUiIhBISAEBACQkAICAEhIAQ4CXSh2DnyDfmCPEG2Iv9F9MPlM/LHyAecdyMzHYNwR3fdNK/OH9HXl1UCozD24TCvILxizEDWIEzA0FcM8woCgRrJCoS5PIwrANQSMAJX1LEI9bqpQo4JYNFFKRSvIgsxHDVnqZgIkPnNBM0rIGtYk9YOOsqgbgepRCfdbmFtqhFkVEDVPjJp0+Z6e6hRHhqBKgg6ZDCvYBygVmUoEGoh5JTRvIJwhJo1aUOoh4CLPMyvxxi7EWOMgnCGsXXI1GIXlZUYX7ucU+kbR8NW8lh3O7cue0Pk32MKndfUxQFAwxdirk3fHappAnc0oqDPzDfGTBrCfHP04dM4oTV8cxr0SVzH9FF07xD3ib6xCDE+M+aUcVygtWzzbtGX2rPBrEUYfecfQkaFzYi6HjVnGBdtL7epqAlc1+jRdAap74RrnPc4BCijttY2tRcdN0g17w7HqZrXhdJTYAuS3hd8z+vKgK3V1zWPae0mZDMykadBn1hTQBLnZNwVrJpSe/NwEeDsEwCctEOsJTsgxLvCqUl2ACftEGvJDgjxrnBqkh3ASTvEWrIDQrwrnJpkB3DSDrGW7IAQ7wqnJtkBnLRztejXXVu4+mxz/nQ9jR1w5VB86ejLTFcnnDwhzV+F6T+CHZlx6THSjn76eyyBIOPHyDakhBAQAkJACAgBISAEhIAQYCLwC8JxpAmsEGt6AAAAAElFTkSuQmCC') no-repeat;
+  background-size: 22px;
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin-left: -22px;
+
+  
+}
+
+th[sortable].desc:before {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+/* Filtering table demo */
+ngbd-table-filtering span.ngb-highlight {
+  background-color: yellow;
+}
+
+/* Complete table demo */
+ngbd-table-complete span.ngb-highlight {
+  background-color: yellow;
+}
+
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
+
+.product-grid{
+  font-family:Raleway,sans-serif;
+  text-align:center;padding:0 0 72px;
+  border:1px solid rgba(0,0,0,.1);
+  overflow:hidden;
+  position:relative;z-index:1}
+
+.product-grid .product-image{
+  position:relative;
+  transition:all .3s ease 0s}
+
+.product-grid .product-image a{
+  display:block}
+
+.product-grid .product-image img{
+  width:100%;
+  height:auto}
+
+.product-grid .pic-1{
+  opacity:1;
+  transition:all .3s ease-out 0s}
+
+.product-grid:hover .pic-1{
+  opacity:1}
+
+.product-grid .pic-2{
+  opacity:0;
+  position:absolute;
+  top:0;left:0;
+  transition:all .3s ease-out 0s}
+
+.product-grid:hover .pic-2{opacity:1}
+
+.product-grid .social{
+  width:150px;
+  padding:0;
+  margin:0;
+  list-style:none;
+  opacity:0;
+  transform:translateY(-50%) translateX(-50%);
+  position:absolute;
+  top:60%;left:50%;
+  z-index:1;
+  transition:all .3s ease 0s}
+
+.product-grid:hover .social{
+  opacity:1;top:50%}
+
+.product-grid .social li{
+  display:inline-block}
+
+.product-grid .social li a{
+  color:#fff;
+  background-color:#333;
+  font-size:16px;
+  line-height:40px;
+  text-align:center;
+  height:40px;width:40px;
+  margin:0 2px;display:block;
+  position:relative;
+  transition:all .3s ease-in-out}
+
+.product-grid .social li a:hover{
+  color:#fff;
+  background-color:#ef5777}
+
+.product-grid .social li a:after,.product-grid .social li a:before{
+  content:attr(data-tip);
+  color:#fff;background-color:#000;
+  font-size:12px;
+  letter-spacing:1px;line-height:20px;padding:1px 5px;
+  white-space:nowrap;opacity:0;transform:translateX(-50%);
+  position:absolute;
+  left:50%;top:-30px}
+
+.product-grid .social li a:after{
+  content:'';
+  height:15px;width:15px;
+  border-radius:0;
+  transform:translateX(-50%) rotate(45deg);
+  top:-20px;
+  z-index:-1}
+
+.product-grid .social li a:hover:after,.product-grid .social li a:hover:before{
+  opacity:1}
+
+.product-grid .product-discount-label,.product-grid .product-new-label{
+  color:#fff;
+  background-color:#ef5777;
+  font-size:12px;
+  text-transform:uppercase;
+  padding:2px 7px;display:block;
+  position:absolute;
+  top:10px;
+  left:0}
+
+.product-grid .product-discount-label{
+  background-color:#333;
+  left:auto;
+  right:0}
+
+.product-grid .rating{
+  color:#FFD200;
+  font-size:12px;
+  padding:12px 0 0;
+  margin:0;list-style:none;position:relative;
+  z-index:-1}
+
+.product-grid .rating li.disable{
+  color:rgba(0,0,0,.2)}
+
+.product-grid .product-content{
+  background-color:#fff;
+  text-align:center;
+  padding:12px 0;margin:0 auto;position:absolute;
+  left:0;right:0;
+  bottom:-27px;z-index:1;
+  transition:all .3s}
+
+.product-grid:hover .product-content{
+  bottom:0}
+
+.product-grid .title{
+  font-size:13px;
+  font-weight:400;
+  letter-spacing:.5px;
+  text-transform:capitalize;
+  margin:0 0 10px;
+  transition:all .3s ease 0s}
+
+.product-grid .title a{
+  color:#828282}
+
+.product-grid .title a:hover,.product-grid:hover .title a{
+  color:#ef5777}
+
+.product-grid .price{
+  color:#333;
+  font-size:17px;
+  font-family:Montserrat,sans-serif;
+  font-weight:700;
+  letter-spacing:.6px;
+  margin-bottom:8px;
+  text-align:center;transition:all .3s}
+
+.product-grid .price span{
+  color:#999;font-size:13px;
+  font-weight:400;
+  text-decoration:line-through;
+  margin-left:3px;display:inline-block}
+
+.product-grid .add-to-cart{
+  color:#000;
+  font-size:13px;
+  font-weight:600}
+
+@media only screen and (max-width:950px)
+
+{.product-grid{margin-bottom:30px}
+
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navbar .container-fluid>.navbar-header {
+  float: left;
+  margin-right: 10px;
+  
+  
+}
+.navbar .navbar-nav {
+  float: left;
+  margin: 5px;
+  
+}
+.nav>li {
+  float: left;
+}
+a {
+  font-size: 18px;
+  
+}
+button.dropdown-item{
+  font-size: 18px;
+  width: 100;
+  height:30;
+
+}
+button.btn-outline-primary{
+  color: rgb(35, 26, 161);
+  font-size: 18px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

@@ -1,0 +1,30 @@
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img src="/assets/thumb1.jpg" alt="Random first slide" style="width:1200px;height:450px;" [routerLink]="['/shoe/1']">">
+      <div class="carousel-caption">
+        <h3>10 seconds between slides...</h3>
+        <p>This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="/assets/thumb3.jpg" alt="Random second slide" style="width:1200px;height:450px;">
+      <div class="carousel-caption">
+        <h3>No mouse events...</h3>
+        <p>This carousel doesn't pause or resume on mouse events</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="/assets/thumb7.jpg"  alt="Random third slide"style="width:1200px;height:450px;">
+      <div class="carousel-caption">
+        <h3>No keyboard...</h3>
+        <p>This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="/assets/thumb8.jpg" alt="Random fourth slide"style="width:1200px;height:450px;">
+      <div class="carousel-caption">
+        <h3>And no wrap after last slide.</h3>
+        <p>This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
